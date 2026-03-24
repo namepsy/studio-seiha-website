@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Team | StudioSeiHa</title>
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="logo">
+StudioSeiHa
+</div>
+
+<nav>
+<ul>
+
+<li><a href="../index.html">Home</a></li>
+
+<li><a href="kids-music.html">Kids Music</a></li>
+
+<li><a href="music-production.html">Music Production</a></li>
+
+<li><a href="https://seihi.co.kr">SEIHI</a></li>
+
+<li><a href="game.html">Game</a></li>
+
+</ul>
+</nav>
+
+</header>
+
+
+<section class="team-page">
+
+<h1>Our Team</h1>
+
+
+<div class="team-grid">
+
+<div class="team-card" onclick="openModal('park')">
+
+<img src="../images/team/park.jpg">
+
+<h3>박세영</h3>
+
+<p>총괄대표</p>
+
+</div>
+
+
+<div class="team-card" onclick="openModal('ham')">
+
+<img src="../images/team/ham.jpg">
+
+<h3>함태영</h3>
+
+<p>메인 작곡가</p>
+
+</div>
+
+
+<div class="team-card" onclick="openModal('kim')">
+
+<img src="../images/team/kim.jpg">
+
+<h3>김규진</h3>
+
+<p>서브 작곡가</p>
+
+</div>
+
+
+<div class="team-card" onclick="openModal('lee')">
+
+<img src="../images/team/lee.jpg">
+
+<h3>이종하</h3>
+
+<p>Backend / Frontend</p>
+
+</div>
+
+
+<div class="team-card" onclick="openModal('ahn')">
+
+<img src="../images/team/ahn.jpg">
+
+<h3>안세은</h3>
+
+<p>Designer</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- TEAM MODAL -->
+
+<div id="team-modal" class="team-modal">
+
+<div class="modal-content">
+
+
+<div class="modal-image">
+
+<img id="modal-img">
+
+</div>
+
+
+<div class="modal-info">
+
+<h2 id="modal-name"></h2>
+
+<p id="modal-role"></p>
+
+<p id="modal-desc"></p>
+
+<button onclick="closeModal()">닫기</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<script src="../main.js"></script>
+
+</body>
+
+</html>
