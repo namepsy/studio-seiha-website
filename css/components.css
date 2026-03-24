@@ -133,6 +133,29 @@ TEAM GRID
 .team-card{
   overflow:hidden;
   cursor:pointer;
+  position:relative;
+}
+
+.team-card::after{
+  content:"View Profile";
+  position:absolute;
+  left:20px;
+  bottom:20px;
+  padding:10px 14px;
+  border-radius:999px;
+  background:rgba(11,37,69,0.82);
+  color:#fff;
+  font-size:0.82rem;
+  font-weight:700;
+  letter-spacing:0.04em;
+  opacity:0;
+  transform:translateY(10px);
+  transition:opacity 0.28s ease, transform 0.28s ease;
+}
+
+.team-card:hover::after{
+  opacity:1;
+  transform:translateY(0);
 }
 
 .team-card img{
@@ -140,6 +163,11 @@ TEAM GRID
   aspect-ratio:4 / 4.8;
   object-fit:cover;
   background:#f2f5fa;
+  transition:transform 0.5s ease;
+}
+
+.team-card:hover img{
+  transform:scale(1.04);
 }
 
 .team-card-body{
@@ -488,51 +516,8 @@ RESPONSIVE
     padding:20px;
   }
 
-.team-card{
-  overflow:hidden;
-  cursor:pointer;
-  position:relative;
-}
-
-.team-card::after{
-  content:"View Profile";
-  position:absolute;
-  left:20px;
-  bottom:20px;
-  padding:10px 14px;
-  border-radius:999px;
-  background:rgba(11,37,69,0.82);
-  color:#fff;
-  font-size:0.82rem;
-  font-weight:700;
-  letter-spacing:0.04em;
-  opacity:0;
-  transform:translateY(10px);
-  transition:opacity 0.28s ease, transform 0.28s ease;
-}
-
-.team-card:hover::after{
-  opacity:1;
-  transform:translateY(0);
-}
-
-.team-card img{
-  transition:transform 0.5s ease;
-}
-
-.team-card:hover img{
-  transform:scale(1.04);
-}
   .modal-content{
     grid-template-columns:1fr;
-  }
-
-  .modal-image img{
-    aspect-ratio:4 / 3;
-  }
-
-  .modal-info{
-    padding:30px 22px 28px;
   }
 }
 
